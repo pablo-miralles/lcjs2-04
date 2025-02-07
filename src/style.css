@@ -42,7 +42,7 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -114,6 +114,16 @@ button:focus-visible {
   padding: 2rem;
   border-radius: 0.5rem;
   margin: 0 auto;
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  &.is-custom-input {
+    .counter-box__btns {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .counter-box__number {
@@ -136,10 +146,11 @@ button:focus-visible {
   flex-grow: 1;
   cursor: pointer;
   border-radius: 0.5rem;
-  font-size: 10rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1;
   color: #1a1a1a;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   user-select: none;
@@ -153,9 +164,9 @@ button:focus-visible {
 }
 
 .counter-box__btn.is-reset {
-  font-size: 5rem;
   color: #fff;
   background-color: rgb(205, 59, 59);
+  grid-column: span 2;
 }
 
 .counter-box__btn.is-reset:hover {
@@ -163,7 +174,6 @@ button:focus-visible {
 }
 
 .counter-box__btn.is-custom {
-  font-size: 3rem;
   color: #fff;
   background-color: rgb(59, 151, 205);
 }

@@ -9,14 +9,17 @@
   <body>
     <div id="app">
       <div class="counter-box">
-        <div class="counter-box__number">
-          00
-        </div>
+        <div class="counter-box__number"></div>
         <div class="counter-box__btns">
-          <div class="counter-box__btn is-prev">&lt;</div>
-          <div class="counter-box__btn is-next">&gt;</div>
-          <div class="counter-box__btn is-reset">Reset</div>
-          <div class="counter-box__btn is-custom">Custom value</div>
+          <button class="counter-box__btn is-prev">&lt;</button>
+          <button class="counter-box__btn is-next">&gt;</button>
+          <button class="counter-box__btn is-reset">Reset</button>
+        </div>
+      </div>
+      <div class="counter-box is-custom-input">
+        <div class="counter-box__btns">
+          <input type="number" class="counter-box__input" min="0">
+          <button class="counter-box__btn is-custom">Custom value</button>
         </div>
       </div>
     </div>
