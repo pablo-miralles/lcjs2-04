@@ -35,13 +35,13 @@ const setCustomNumber = () => {
 };
 
 if (nextBtn && nextBtn instanceof HTMLButtonElement) {
-	nextBtn?.addEventListener("click", () => {
+	nextBtn.addEventListener("click", () => {
 		formatNumber(++turn);
 	});
 }
 
 if (prevBtn && prevBtn instanceof HTMLButtonElement) {
-	prevBtn?.addEventListener("click", () => {
+	prevBtn.addEventListener("click", () => {
 		if (turn > 0) {
 			formatNumber(--turn);
 		}
